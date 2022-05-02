@@ -11,5 +11,6 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/allBlogs', [BlogController::class, 'takeAll'])->name('allBlogs');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blogEdit/{id}', [BlogController::class, 'show']);
+Route::post('/blogUpdate', [BlogController::class, 'update'])->name('blogUpdate');
 
 Route::post('/blogadd', [BlogController::class, 'add'])->name('blogAdd');

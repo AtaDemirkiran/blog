@@ -22,6 +22,16 @@ class BlogController extends Controller
         $data = blog::find($id);
         return view('blogEdit', ['blog' => $data]);
     }
+    public function update(Request $request)
+    {
+        $data = blog::find($request->id);
+        $data->blogTitle = $request->blogTitle;
+        $data->blogDesc = $request->blogDesc;
+
+        if ($data->save()) {
+            return redirect('/allBlogs');
+        }
+    }
     public function add(Request $request)
     {
 
