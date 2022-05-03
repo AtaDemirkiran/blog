@@ -1,14 +1,5 @@
 @include('admin.layout.header')
 
-{{-- <div class="container">
-    @foreach ($allBlog as $item)
-        {{$item->blogTitle}} <br/>
-        {{$item->blogDesc}}<br/>
-        <a type="button" href="{{'allBlogs/'.$item->id}}" class="btn btn-warning">
-            Edit
-        </a><br/>
-    @endforeach
-</div> --}}
 <div class="container col-sm-8">
 <table class="table">
     <thead>
@@ -28,7 +19,7 @@
         <td>{{$item->blogTitle}}</td>
         <td>{{$item->blogDesc}}</td>
         <td>{{$item->blogCategory}}</td>
-        <td> <a type="button" href="{{'allBlogs/'.$item->id}}" class="btn btn-warning">
+        <td> <a type="button" href="{{'blogs/'.$item->id}}" class="btn btn-warning">
             Edit
         </a></td>
         <td> <a type="button" href="{{'delete/'.$item->id}}" class="btn btn-danger">

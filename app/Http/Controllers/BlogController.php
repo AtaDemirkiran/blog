@@ -38,7 +38,7 @@ class BlogController extends Controller
         $data->blogDesc = $request->blogDesc;
 
         if ($data->save()) {
-            return redirect('admin/allBlogs');
+            return redirect('admin/blogs');
         }
     }
     public function add(Request $request)
@@ -51,7 +51,7 @@ class BlogController extends Controller
             'blogDesc' => $request->blogDesc
         ]);
         if ($ekle) {
-            return redirect('admin/allBlogs');
+            return redirect('admin/blogs');
         }
     }
 
@@ -59,6 +59,6 @@ class BlogController extends Controller
     {
         $data = blog::find($id);
         $data->delete();
-        return redirect('admin/allBlogs');
+        return redirect('admin/blogs');
     }
 }
