@@ -7,29 +7,38 @@ use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
+    public function home()
+    {
+        return view('admin.home');
+    }
+
     public function index()
     {
-        return view('addBlog');
+        return view('admin.addBlog');
     }
 
     public function takeAll()
     {
         $data = blog::all();
-        return view('allBlogs', ['allBlog' => $data]);
+        return view('admin.allBlogs', ['allBlog' => $data]);
     }
+
     public function show($id)
     {
         $data = blog::find($id);
-        return view('blogEdit', ['blog' => $data]);
+        return view('admin.blogEdit', ['blog' => $data]);
     }
+
     public function update(Request $request)
     {
         $data = blog::find($request->id);
         $data->blogTitle = $request->blogTitle;
+        $data->blogShortDesc = $request->blogShortDesc;
+        $data->blogCategory = $request->categories;
         $data->blogDesc = $request->blogDesc;
 
         if ($data->save()) {
-            return redirect('/allBlogs');
+            return redirect('admin/allBlogs');
         }
     }
     public function add(Request $request)
@@ -37,10 +46,19 @@ class BlogController extends Controller
 
         $ekle = blog::insert([
             'blogTitle' => $request->blogTitle,
+            'blogShortDesc' => $request->blogShortDesc,
+            'blogCategory' => $request->categories,
             'blogDesc' => $request->blogDesc
         ]);
         if ($ekle) {
-            return redirect('/');
+            return redirect('admin/allBlogs');
         }
+    }
+
+    public function delete($id)
+    {
+        $data = blog::find($id);
+        $data->delete();
+        return redirect('admin/allBlogs');
     }
 }

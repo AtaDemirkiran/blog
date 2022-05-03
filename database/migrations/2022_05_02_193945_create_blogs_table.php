@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('blogTitle');
             $table->string('blogDesc');
+            $table->string('blogShortDesc');
+            $table->string('blogCategory');
             $table->timestamps();
         });
     }

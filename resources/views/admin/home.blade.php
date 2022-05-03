@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    @include('layout.header')
+    @include('admin.layout.header')
     <div class="container mt-5">
 
 
@@ -17,7 +17,7 @@
       
               <!-- Featured image -->
               <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg" alt="Sample image">
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1500989145603-8e7ef71d639e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="Sample image">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
