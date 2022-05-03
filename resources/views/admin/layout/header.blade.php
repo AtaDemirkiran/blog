@@ -32,7 +32,7 @@
             <a class="nav-link waves-effect" href="{{route('allBlogs')}} ">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="{{route('blog')}} ">Add</a>
+            <a class="nav-link waves-effect" href="{{route('blog-add')}} ">Add</a>
           </li>
           <li class="nav-item">
             <a class="nav-link waves-effect" href="{{route('home')}}">Home</a>

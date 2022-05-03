@@ -29,12 +29,12 @@
             <!-- Grid column -->
             <div class="col-lg-7">
               <!-- Post title -->
-              <h4 class="font-weight-bold mb-3"><strong>Welcome to Blog Page</strong></h4>
+              <h4 class="font-weight-bold mb-3"><strong>Welcome to Blog Admin Page</strong></h4>
               <!-- Excerpt -->
               <p>Click to add new blog.</p>
               <!-- Post data -->
               <!-- Read more button -->
-              <a class="btn btn-success btn-md btn-rounded mx-0" href="{{route('blog')}}" >Add Blog</a>
+              <a class="btn btn-success btn-md btn-rounded mx-0" href="{{route('blog-add')}}" >Add Blog</a>
       
             </div>
             <!-- Grid column -->

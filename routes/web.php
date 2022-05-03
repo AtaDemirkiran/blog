@@ -10,7 +10,7 @@ Route::get('/category/{blogCategory}', [HomeController::class, 'show_category'])
 // blog controller
 Route::get('/admin', [BlogController::class, 'home'])->name('admin');
 Route::get('/admin/blogs', [BlogController::class, 'takeAll'])->name('allBlogs');
-Route::get('/admin/blog-add', [BlogController::class, 'index'])->name('blog');
+Route::get('/admin/blog-add', [BlogController::class, 'index'])->name('blog-add');
 Route::get('/admin/blogs/{id}', [BlogController::class, 'show']);
 Route::post('/admin/blogUpdate', [BlogController::class, 'update'])->name('blogUpdate');
 
