@@ -1,6 +1,6 @@
 @include('admin.layout.header')
 
-<div class="container col-sm-8">
+<div class="container col-sm-8 mt-3">
 <table class="table">
     <thead>
       <tr>

@@ -9,8 +9,12 @@ class HomeController extends Controller
 {
     public function index()
     {
+        return view('index');
+    }
+    public function home_blogs()
+    {
         $data = blog::all();
-        return view('index', ['blogs' => $data]);
+        return view('homeBlog', ['blogs' => $data]);
     }
     public function show_category($blogCategory)
     {

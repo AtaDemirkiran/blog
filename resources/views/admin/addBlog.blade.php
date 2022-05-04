@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     
-</head>
-<body>
+
   @include('admin.layout.header')
-    <div class="container">
+    <div class="container mt-3">
     <form class="col-md-12"  action="{{route('blogAdd')}}" method="POST">
         @csrf
         <div class="mb-3">
@@ -30,5 +25,4 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
-</body>
-</html>
+

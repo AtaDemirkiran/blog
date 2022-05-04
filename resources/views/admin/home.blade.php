@@ -29,7 +29,7 @@
             <!-- Grid column -->
             <div class="col-lg-7">
               <!-- Post title -->
-              <h4 class="font-weight-bold mb-3"><strong>Welcome to Blog Admin Page</strong></h4>
+              <h4 class="font-weight-bold mb-3"><strong>Blog Admin Page</strong></h4>
               <!-- Excerpt -->
               <p>Click to add new blog.</p>
               <!-- Post data -->
