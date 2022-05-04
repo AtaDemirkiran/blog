@@ -17,7 +17,7 @@
       <tr>
         <th scope="row">{{$item->id}}</th>
         <td>{{$item->blogTitle}}</td>
-        <td>{{$item->blogDesc}}</td>
+        <td>{{$item->blogShortDesc}}</td>
         <td>{{$item->blogCategory}}</td>
         <td> <a type="button" href="{{'blogs/'.$item->id}}" class="btn btn-warning">
             Edit

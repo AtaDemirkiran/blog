@@ -2,12 +2,9 @@
 @include('layout.header')
 
 @foreach ($category as $item)
-    
-
 <div class="container mt-5">
     <!--Section: Content-->
     <section class="dark-grey-text">
-    
         <!-- Grid row -->
       <div class="row align-items-center">
         <!-- Grid column -->
